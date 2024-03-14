@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+  font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url(./background.jpg); */
+    background-size: cover;
+    overflow: hidden;
+    -webkit-animation-name: test;
+    -webkit-animation-duration: 200s;
+    -webkit-animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes test {
+    0% {
+      background-image: url(./background.jpg);
+
+    }
+    20% {
+        background-image: url(./background2.jpg);
+    }
+    40% {
+      background-image: url(./background3.jpg);
+    }
+    60% {
+      background-image: url(./background4.jpg);
+    }
+    80% {
+      background-image: url(./background5.jpg);
+    }
+    100% {
+      background-image: url(./background6.jpg);
+    }
+  }
+  
+.heading{
+  margin-top: 1%;
+  display: flex;
+}
+.head1{
+ color: white;
+ position: relative;
+ top: 5%;
+ left: 5%;
+ letter-spacing: 5px;
+ font-size: 100px;
+ text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.893);
+
+}
+.head2{
+ letter-spacing: 5px;
+ color: rgba(235, 231, 231, 0.656);
+ text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.556);
+  top: 9%;
+  left: 19%;
+  position: absolute;
+  font-size: 50px;
+}
+.clock_container{
+  display: flex;
+  width: 50%;
+  /* border: 2px solid white; */
+    position: relative;
+    top: 8%;
+    left: 5%;
+}
+.clock_container div{
+  margin: 5px 30px 5px  5px;
+  position: relative;
+
+}
+.clock_container span{
+  padding: 10px;
+  width: 200px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(96, 102, 112, 0.355);
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow:2px 2px 5px rgba(0, 0, 0, 0.668);
+  
+}
+.clock_container #hour{
+  font-size: 100px;
+}
+.clock_container #minute{
+  font-size: 100px;
+}
+.clock_container #second{
+  font-size: 100px;
+}
+.clock_container .text {
+  margin-top: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.781);
+  opacity: 0.8;
+}
+.clock_container #ampm {
+  bottom: 70%;
+  position: absolute;
+  width: 80px;
+  font-size: 30px;
+  background: rgba(0, 87, 104, 0.484);
+
+}
+
+.quotes_container{
+  margin-left: 5%;
+  margin-top: 8%;
+  /* border: 2px solid white; */
+  width: 700px;
+
+}
+.quotes_container{
+  font-family: sans-serif;
+  color: white;
+
+}
+.quote_title{
+  color: rgba(239, 239, 239, 0.662);
+  font-size: 20px;
+  margin: 10px 0;
+}
+.quotes_container p{
+  border: 1px solid rgba(96, 102, 112, 0.355);
+  border-radius: 15px;
+  background: rgba(96, 102, 112, 0.355);
+  padding: 30px;
+  font-size: 25px;
+  margin-bottom: 10px
+  /* color: white; */
+}
+#quotes_data{
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid rgba(217, 217, 217, 0.551);
+  font-size: 30px;
+  color: white;
+}
+
